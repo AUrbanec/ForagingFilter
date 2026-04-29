@@ -3,7 +3,7 @@ let activeBlockedTerms =[];
 // Fetch the currently active terms from storage
 function updateTerms() {
   chrome.storage.sync.get(['blockedTerms'], (data) => {
-    const termsObj = data.blockedTerms || { "ramps": true, "morels": true, "wild carrot": true, "wild garlic": true };
+    const termsObj = data.blockedTerms || { "ramps": true, "ramp": true, "morels": true, "morel": true, "wild carrot": true, "wild garlic": true };
     // Filter to only include terms that are toggled ON
     activeBlockedTerms = Object.keys(termsObj).filter(term => termsObj[term]);
     filterPosts();
