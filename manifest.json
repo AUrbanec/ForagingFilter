@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Foraging Filter",
+  "version": "1.0",
+  "description": "Automatically hide r/foraging posts containing specific terms.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.reddit.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js":["content.js"]
+    }
+  ]
+}
