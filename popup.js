@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // The default terms requested
   const defaultTerms = {
     "ramps": true,
+    "ramp": true,
+    "morel": true,
     "morels": true,
     "wild carrot": true,
     "wild garlic": true
